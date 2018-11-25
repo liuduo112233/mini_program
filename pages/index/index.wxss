@@ -1,21 +1,136 @@
-/**index.wxss**/
-.userinfo {
+swiper, swiper-item, .slide-image {
+  height: 580rpx;
+  width: 100%;
+  overflow: auto;
+}
+
+.fakeDots {
+  position: absolute;
+  top: 437rpx;
+  right: 33rpx;
+  width: 118rpx;
   display: flex;
-  flex-direction: column;
+}
+
+.fakeDots .dot {
+  width: 10rpx;
+  height: 10rpx;
+  background: rgba(255, 255, 255, 0.38);
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.fakeDots .dot+.dot {
+  margin-left: 8rpx;
+}
+
+.fakeDots .dot.active {
+  background: #fff;
+  width: 41rpx;
+  border-radius: 5rpx;
+}
+
+.excuteArea {
+  height: 230rpx;
+  background: #fff;
+  position: absolute;
+  top: 468rpx;
+  width: 698rpx;
+  left: 26rpx;
+  border-radius: 18rpx;
+  box-shadow: 0 14rpx 43rpx rgba(108, 143, 248, 0.51);
+}
+
+.line {
+  width: 2rpx;
+  height: 109rpx;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+  top: 50%;
+}
+
+.excuteArea {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.excuteArea .item {
+  overflow: auto;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.excuteArea .item .text {
+  height: 29rpx;
+  font-size: 30rpx;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  line-height: 29rpx;
+  margin-top: 10rpx;
 }
 
-.usermotto {
-  margin-top: 200px;
+.excuteArea cover-image {
+  width: 117rpx;
 }
+
+.scan {
+  width: 256rpx;
+  height: 256rpx;
+  position: absolute;
+  bottom: 8%;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.scan image {
+  width: 256rpx;
+  height: 256rpx;
+}
+
+.srollText {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 82rpx;
+  right: 0;
+  background:rgba(255,255,255,0.14);
+  color: #56A5FF;
+  line-height: 43rpx;
+  overflow: hidden;
+  height: 43rpx;
+}
+
+.messageBox{
+  width: 82rpx;
+  height: 43rpx;
+  position: absolute;
+  left:0rpx;
+  top: 0; 
+  z-index: 2;
+  background:rgba(255,255,255,0.14);
+
+}
+.messageBox .message{
+  width: 33rpx;
+  height: 27rpx;
+  position: absolute;
+  left: 27rpx;
+  top: 5rpx;
+}
+
+.marquee_box {
+  width: 100%;
+  position: relative;
+}
+
+.marquee_text {
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+}
+
+
+
+
+

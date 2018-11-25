@@ -8,12 +8,13 @@
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.4",
-	"appid": "wx2d14fec72064d438",
-	"projectname": "wx_xcx",
+	"libVersion": "2.4.0",
+	"appid": "wxf625e7659f0f1cea",
+	"projectname": "shareBed",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

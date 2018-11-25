@@ -1,11 +1,52 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<swiper 
+bindchange="swiperChange"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item item-id="{{index}}">
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+  <cover-view class='fakeDots'> 
+  <cover-view  class='dot {{currentDot==0?"active":""}}'></cover-view >
+  <cover-view  class='dot {{currentDot==1?"active":""}}'></cover-view >
+  <cover-view  class='dot {{currentDot==2?"active":""}}'></cover-view >
+  <cover-view  class='dot {{currentDot==3?"active":""}}'></cover-view >
+  </cover-view>
+  <cover-view class='excuteArea'>
+  <cover-view  class='line'></cover-view >
+  <cover-view  class='item'>
+     <cover-image mode='widthFix' src='../../images/readme.png'></cover-image>
+     <cover-view class='text'>使用必读</cover-view>
+  </cover-view>
+  <cover-view  class='item'>
+     <cover-image mode='widthFix' src='../../images/orderList.png'></cover-image>
+     <cover-view  class='text'>当前订单</cover-view >
+
+  
+  </cover-view >
+  
+  </cover-view>
+  <view class='scan'>
+  <image mode='widthFix' src='../../images/scan.png'></image>
   </view>
 
+
+
+<view class='messageBox'>
+    <image class='message' mode='widthFix' src='../../images/message.png'></image>
 </view>
+
+<view class="srollText">
+  <view class="marquee_box">
+    <view class="marquee_text" style="{{orientation}}:{{marqueeDistance}}px;font-size: {{size}}px;">
+      <text>{{text}}</text>
+      <text wx:if="{{marqueecopy_status}}" style="margin-left:{{marquee_margin}}px;">{{text}}</text>
+    </view>
+  </view>
+</view>  
+
+
+
+
+
