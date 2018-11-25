@@ -1,5 +1,6 @@
 <swiper 
 bindchange="swiperChange"
+circular=true
   autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
   <block wx:for="{{imgUrls}}">
     <swiper-item item-id="{{index}}">
@@ -27,6 +28,8 @@ bindchange="swiperChange"
   </cover-view >
   
   </cover-view>
+  <view class='excuteArea_fake'></view>
+
   <view class='scan'>
   <image mode='widthFix' src='../../images/scan.png'></image>
   </view>

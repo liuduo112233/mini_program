@@ -17,7 +17,7 @@ swiper, swiper-item, .slide-image {
   height: 10rpx;
   background: rgba(255, 255, 255, 0.38);
   border-radius: 50%;
-  transition: all 0.3s;
+  transition: width 0.3s;
 }
 
 .fakeDots .dot+.dot {
@@ -28,6 +28,8 @@ swiper, swiper-item, .slide-image {
   background: #fff;
   width: 41rpx;
   border-radius: 5rpx;
+  transition: width 0.3s;
+
 }
 
 .excuteArea {
@@ -38,7 +40,17 @@ swiper, swiper-item, .slide-image {
   width: 698rpx;
   left: 26rpx;
   border-radius: 18rpx;
-  box-shadow: 0 14rpx 43rpx rgba(108, 143, 248, 0.51);
+}
+.excuteArea_fake{
+   height: 230rpx;
+  background: #fff;
+  position: absolute;
+  top: 468rpx;
+  z-index: -1;
+  width: 698rpx;
+  left: 26rpx;
+  border-radius: 18rpx;
+  box-shadow: 0 7px 23px rgba(108, 143, 248, 0.51);
 }
 
 .line {
@@ -63,10 +75,11 @@ swiper, swiper-item, .slide-image {
 
 .excuteArea .item .text {
   height: 29rpx;
-  font-size: 30rpx;
+  font-size: 29rpx;
   font-weight: 400;
   color: rgba(0, 0, 0, 1);
   line-height: 29rpx;
+  /* overflow: hidden; */
   margin-top: 10rpx;
 }
 
@@ -90,7 +103,6 @@ swiper, swiper-item, .slide-image {
 
 .srollText {
   position: absolute;
-  width: 100%;
   top: 0;
   left: 82rpx;
   right: 0;
