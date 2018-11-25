@@ -21,7 +21,7 @@ Page({
     marquee_margin: 10,
     size: 12,
     orientation: 'left',//滚动方向
-    timeInterval: 20 // 时间间隔
+    timeInterval: 40 // 时间间隔
 
   },
  
