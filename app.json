@@ -1,26 +1,27 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+  "pages": [
+    "pages/orders/orders",
+    "pages/userCenter/userCenter",
+    "pages/index/index"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#56A5FF",
     "navigationBarTitleText": "智慧床边柜系统",
-    "navigationBarTextStyle":"#fff"
+    "navigationBarTextStyle": "#fff"
   },
   "tabBar": {
-    "selectedColor":"#56A5FF",
-    "backgroundColor":"#fff",
+    "selectedColor": "#56A5FF",
+    "backgroundColor": "#fff",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath":"images/indexIcon.png",
-        "selectedIconPath":"images/indexIconActive.png"
+        "iconPath": "images/indexIcon.png",
+        "selectedIconPath": "images/indexIconActive.png"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/userCenter/userCenter",
         "text": "个人中心",
         "iconPath": "images/userCenter.png",
         "selectedIconPath": "images/userCenterActive.png"
