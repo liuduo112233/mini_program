@@ -1,0 +1,35 @@
+.user-container{
+  box-sizing: border-box;
+  padding:0 25px 10px 25px;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  padding: 50rpx;
+  align-items: center
+}
+
+.userinfo-avatar{
+  width:128rpx;
+  height:128rpx;
+  margin:20rpx;
+  border-radius:50%;
+}
+.userinfo-nickname{
+  color:#aaa;
+}
+.item{
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+}
+.item-title{
+  color: #333;
+  font-size: 16px;
+}
+.item-icon{
+ width: 22px;
+ height: 22px;
+}

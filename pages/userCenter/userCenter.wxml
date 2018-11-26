@@ -1,0 +1,13 @@
+<!--logs.wxml-->
+<view class="user-container">
+  <view class='userinfo'>
+    <image src="{{userInfo.avatarUrl}}" mode="cover" class='userinfo-avatar'></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view wx:for="{{infoList}}" wx:for-index="idx" wx:for-item="userItem">
+    <view class='item'>
+      <view class='item-title'>{{userItem.name}}</view>
+      <image class='item-icon' src="{{userItem.icon}}"></image>
+    </view>
+  </view>
+</view>

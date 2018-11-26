@@ -1,0 +1,10 @@
+<view class='order'  wx:for="{{orderLists}}" wx:for-index="orderIndex" wx:for-item="orderItem">
+  <view class='order-item'>
+    <image src='../../images/orderImg.png' class='orderItemImg' mode="cover" ></image>
+    <view class='orderItemInfo'>
+      <text class='status'>{{orderItem.statusVaue}}</text>
+      <view class='detail'><icon class='time' style="background-image:url('../../images/time_icon.png')"></icon> {{orderItem.usedTime}}{{orderItem.location}}</view>
+    </view>
+  </view>
+  
+</view>

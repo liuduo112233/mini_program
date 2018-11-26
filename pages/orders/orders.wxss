@@ -1,0 +1,35 @@
+.order{
+  padding: 15rpx 12rpx;
+}
+.order-item{
+  padding: 11rpx;
+  display: flex;
+  justify-content: flex-start
+}
+.orderItemImg{
+  width: 98rpx;
+  height: 98rpx;
+  margin-right: 13rpx;
+}
+.orderItemInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.orderItemInfo .status{
+  line-height: 43rpx;
+  font-size: 36rpx;
+}
+.orderItemInfo .detail{
+  display: flex;
+  height: 30rpx;
+  color: #999;
+  font-size: 25rpx;
+  align-items: center;
+}
+.detail .time{
+  width: 24rpx;
+  height: 24rpx;
+  display: inline-block;
+  background-size: 100% 100%;
+}
