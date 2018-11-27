@@ -1,0 +1,63 @@
+.my-order{
+
+}
+.tab text{
+  display: inline-block;
+  text-align: center;
+  font-size: 30rpx;
+  padding: 13rpx;
+}
+.tab{
+  display: flex;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  height: 85rpx;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+.tab text.active{
+  border-bottom: 3rpx solid #56A5FF;
+  color: #56A5FF;
+}
+.recharge-list{
+  background: #FDFDFD;
+  border-radius: 30rpx;
+  padding: 0 25rpx 21rpx 25rpx;
+}
+.recharge-item{
+  width:700rpx;
+  height: 128rpx;
+  background:#fff;
+  box-shadow:0px 2rpx 27rpx 0 rgba(56,56,56,0.07);
+  border-radius:9rpx;
+  margin-top: 21rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.recharge-item .item-left{
+  display: flex;
+  flex-direction: row;
+}
+.recharge-item .icon{
+  width: 73rpx;
+  height: 73rpx;
+  margin: 0rpx 20rpx 0rpx 20rpx;
+}
+.recharge-info{
+  display:inline-flex;
+  flex-direction: column;
+}
+.recharge-info .title{
+  color: #333;
+  font-size: 30rpx;
+  line-height: 43rpx;
+}
+.recharge-info .time{
+  color: #999;
+  font-size: 24rpx;
+}
+.recharge-item .price{
+  color: #F48726;
+  font-size: 36rpx;
+  margin-right: 33rpx;
+}

@@ -1,8 +1,10 @@
 {
   "pages": [
+    "pages/myOrders/myOrders",
     "pages/orders/orders",
     "pages/userCenter/userCenter",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/recharge/recharge"
   ],
   "window": {
     "backgroundTextStyle": "light",

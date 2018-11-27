@@ -1,14 +1,11 @@
-// pages/orders/orders.js
-const app = getApp()
+// pages/myOrders/myOrders.js
 Page({
+
+  /**
+   * 页面的初始数据
+   */
   data: {
-    orderLists:[
-      {statusVaue:'智慧床边柜使用中',usedTime:'12:32:33',location:'深圳市南山区2号床'},
-      { statusVaue: '智慧床边柜使用中', usedTime: '12:32:33', location: '深圳市南山区2号床' },
-      { statusVaue: '智慧床边柜使用中', usedTime: '12:32:33', location: '深圳市南山区2号床' },
-      { statusVaue: '智慧床边柜使用中', usedTime: '12:32:33', location: '深圳市南山区2号床' },
-      { statusVaue: '智慧床边柜使用中', usedTime: '12:32:33', location: '深圳市南山区2号床' }
-    ]
+      
   },
 
   /**
