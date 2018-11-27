@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/orders/orders",
     "pages/userCenter/userCenter",
+    "pages/orders/orders",
     "pages/index/index"
   ],
   "window": {
