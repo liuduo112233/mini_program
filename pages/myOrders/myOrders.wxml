@@ -1,0 +1,26 @@
+<view class='my-order'>
+  <view class='tab'>
+    <text class='active'>充值记录</text>
+    <text class=''>租借记录</text>
+  </view>
+
+  <view class='tab-content'>
+    <view class='recharge-list'>
+      <view class='recharge-item'>
+
+        <view class='item-left'>
+          <image class='icon' src='../../images/recharge_icon.png'></image>
+          <view class='recharge-info'>
+            <text class='title'>通过微信充值</text>
+            <text class='time'>2018-10-10 12:25:25</text>
+          </view>
+        </view>
+
+        <text class='price'>+200元</text>
+
+      </view>
+
+    </view>
+  </view>
+
+</view>

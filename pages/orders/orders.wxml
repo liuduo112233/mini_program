@@ -1,10 +1,18 @@
 <view class='order'  wx:for="{{orderLists}}" wx:for-index="orderIndex" wx:for-item="orderItem">
   <view class='order-item'>
-    <image src='../../images/orderImg.png' class='orderItemImg' mode="cover" ></image>
-    <view class='orderItemInfo'>
-      <text class='status'>{{orderItem.statusVaue}}</text>
-      <view class='detail'><icon class='time' style="background-image:url('../../images/time_icon.png')"></icon> {{orderItem.usedTime}}{{orderItem.location}}</view>
+    <view class='item-top'>
+        <image src='../../images/orderImg.png' class='orderItemImg' mode="cover" ></image>
+        <view class='orderItemInfo'>
+          <text class='status'>{{orderItem.statusVaue}}</text>
+          <view class='detail'><icon class='time' style="background-image:url('../../images/time_icon.png')"></icon>使用时长：{{orderItem.usedTime}}<icon class='location' style="background-image:url('../../images/location_icon.png')" ></icon> {{orderItem.location}}</view>
+        </view>
     </view>
+    <view class='item-bottom'>
+      <text class='price'>1233.00</text>
+      <text class='price_title'>当前费用（元）</text>
+      <button class='btn'>结束并缴费</button>
+    </view>
+
   </view>
   
 </view>
