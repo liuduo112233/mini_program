@@ -1,12 +1,12 @@
 <view class='my-order'>
   <view class='tab'>
-    <text class='active'>充值记录</text>
-    <text class=''>租借记录</text>
+    <text class="{{tabName=='充值记录'?'active':''}}" data-value='充值记录' bindtap="switchTab">充值记录</text>
+    <text class="{{tabName=='租借记录'?'active':''}}" data-value='租借记录'  bindtap="switchTab">租借记录</text>
   </view>
 
   <view class='tab-content'>
     <!-- 充值记录 -->
-    <view class='recharge-list'>
+    <view class='recharge-list' wx:if="{{tabName=='充值记录'}}">
       <view class='recharge-item'>
         <view class='item-left'>
           <image class='icon' src='../../images/recharge_icon.png'></image>
@@ -41,7 +41,7 @@
       </view>
     </view>
     <!-- 租借记录 -->
-    <view class='rent-list'>
+    <view class='rent-list' wx:else="{{tabName=='租借记录'}}">
       <view class='rent-item'>
         <view class='item-left'>
           <image class='icon' src='../../images/rent_icon.png'></image>

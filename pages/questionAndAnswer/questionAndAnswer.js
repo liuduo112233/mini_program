@@ -1,11 +1,26 @@
-// pages/myOrders/myOrders.js
+// pages/questionAndAnswer/questionAndAnswer.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-      tabName:'充值记录'
+    list01: [
+      { item_id: 1 }, { item_id: 11 }, { item_id: 11 },
+    ],
+    // 展开折叠
+    selectedFlag: [false, false, false, false],
+  },
+  changeToggle: function (e) {
+    var index = e.currentTarget.dataset.index;
+    if (this.data.selectedFlag[index]) {
+      this.data.selectedFlag[index] = false;
+    } else {
+      this.data.selectedFlag[index] = true;
+    }
+    this.setData({
+      selectedFlag: this.data.selectedFlag
+    })
   },
 
   /**
@@ -62,13 +77,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  switchTab:function(event){
-   var value = event.currentTarget.dataset.value;
-   this.setData({
-     tabName:value 
-   })
   }
-
-
 })
