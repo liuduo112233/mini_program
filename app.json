@@ -1,6 +1,8 @@
 {
   "pages": [
-    "pages/useRequired/useRequired",
+    "pages/withdrawCash/withdrawCash",
+    "pages/paymentResult/paymentResult",
+    "pages/requiredRead/requiredRead",
     "pages/recharge/recharge",
     "pages/myPurse/myPurse",
     "pages/questionAndAnswer/questionAndAnswer",

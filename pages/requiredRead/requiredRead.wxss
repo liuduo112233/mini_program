@@ -1,0 +1,90 @@
+.readMust{
+  padding-bottom: 70rpx;
+}
+.tab text {
+  display: inline-block;
+  text-align: center;
+  font-size: 30rpx;
+  padding: 13rpx;
+}
+
+.tab {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  height: 85rpx;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+
+.tab text.active {
+  border-bottom: 3rpx solid #56a5ff;
+  color: #56a5ff;
+}
+
+.step_wrap {
+  display: flex;
+  flex-direction: column;
+}
+.step_top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.step{
+  width: 51rpx;
+  height: 51rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  margin-top: 58rpx;
+  background:#56A5FF;
+  font-size: 36rpx;
+  font-weight:600;
+  color: #fff;
+}
+.step_title{
+  margin-top: 24rpx;
+  font-size: 30rpx;
+}
+.step_pic{
+margin-top: 91rpx;
+  width: 427rpx;
+  height: 312rpx;
+}
+.picOne {
+  margin-left: 249rpx;
+}
+.picTwo{
+  margin-left: 166rpx;
+  width: 357rpx;
+  height: 377rpx;
+}
+.picThree{
+  margin-left: 123rpx;
+  width: 449rpx;
+  height: 535rpx;
+}
+.picFour{
+  margin-left: 166rpx;
+  width: 357rpx;
+  height: 380rpx;
+}
+.picFive{
+  margin-left: 258rpx;
+  width: 226rpx;
+  height: 449rpx;
+}
+.picSix{
+  height: 397rpx;
+  width: 438rpx;
+  margin-left: 273rpx;
+}
+.picSeven{
+  width: 385rpx;
+  height: 395rpx;
+  margin-left: 269rpx;
+}
+.picEight{
+  width: 420rpx;
+  height: 397rpx;
+  margin-left: 266rpx;
+}

@@ -1,0 +1,17 @@
+<view class='withdraw_wrap'>
+  <view class='content'>
+    <view class='title'>
+      <icon class='icon' style="background-image:url('../../images/wechat.png')"></icon>
+      <text>提现到微信</text>
+    </view>
+
+    <view class='withdraw_moeny'>
+      <view class='withdraw_left'>
+        <text class='money_unit'>￥</text>
+        <input bindinput="bindKeyInput" bindinput='getMoney' class='money' value='{{money_value}}' type="digit" placeholder="可提现到微信{{money}}元" />
+      </view>
+      <text class='all_money'  bindtap="getAllMoney" data-money="{{money}}" >全部</text>
+    </view>
+  </view>
+  <button class='withdraw_btn'>立即转出</button>
+</view>

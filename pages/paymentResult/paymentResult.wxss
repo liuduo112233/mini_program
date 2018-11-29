@@ -1,0 +1,57 @@
+.payment_wrap{
+  
+}
+.payment_wrap .bg{
+    width: 750rpx;
+    height: 500rpx;
+    background-size: 100% 100%;
+  }
+
+  .payment_wrap .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+  .payment_wrap .top .icon{
+    width: 83rpx;
+    height: 83rpx;
+    margin-top: 55rpx;
+  }
+  .payment_wrap .payBack_status{
+    font-size: 36rpx;
+    font-weight:300;
+    margin-top: 20rpx;
+  }
+  .payment_wrap .orderNum{
+    font-size: 25rpx;
+    color: #999;
+    font-weight:300;
+    margin-top: 12rpx;
+  }
+   .payment_wrap .bottom{
+      margin-top: 50rpx;
+  }
+  .payment_wrap .bottom{
+    display: flex;
+    padding: 0 54rpx;
+    justify-content: space-between
+  }
+  .payment_wrap .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .payment_wrap .item .num{
+    color: #56A5FF;
+    font-size: 58rpx;
+    font-weight:bold;
+  }
+  .payment_wrap .item .unit{
+    color: #56A5FF;
+    font-size: 24rpx;
+  }
+  .payment_wrap .item_name{
+    font-size: 30rpx;
+    font-weight:300;
+  }

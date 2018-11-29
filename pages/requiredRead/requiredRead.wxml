@@ -1,0 +1,78 @@
+<view class='readMust'>
+  <view class='tab'>
+    <text class="{{tabName=='使用陪护床'?'active':''}}" data-value='使用陪护床' bindtap="switchTab">使用陪护床</text>
+    <text class="{{tabName=='归还陪护床'?'active':''}}" data-value='归还陪护床' bindtap="switchTab">归还陪护床</text>
+    <text class="{{tabName=='余额提现'?'active':''}}" data-value='余额提现' bindtap="switchTab">余额提现</text>
+  </view>
+
+  <view class='tab-content'>
+    <!-- 使用陪护床 -->
+    <view class='contentItem' wx:if="{{tabName=='使用陪护床'}}">
+      <view class='step_wrap'>
+        <view class='step_top'>
+          <text class='step'>1</text>
+          <text class='step_title'>步骤一：扫描柜机上的二维码</text>
+        </view>
+        <image src='../../images/01.png' class='picOne step_pic'></image>
+      </view>
+      <view class='step_wrap'>
+        <view class='step_top'>
+          <text class='step'>2</text>
+          <text class='step_title'>步骤二：开锁成功，弹出柜机门</text>
+        </view>
+        <image src='../../images/02.png' class='picTwo step_pic'></image>
+      </view>
+      <view class='step_wrap'>
+        <view class='step_top'>
+          <text class='step'>3</text>
+          <text class='step_title'>步骤三：拉出陪护床，展开使用</text>
+        </view>
+        <image src='../../images/03.png' class='picThree step_pic'></image>
+      </view>
+
+
+    </view>
+    <!-- 归还陪护床 -->
+    <view class='contentItem' wx:elif="{{tabName=='归还陪护床'}}">
+      <view class='step_wrap'>
+        <view class='step_top'>
+          <text class='step'>1</text>
+          <text class='step_title'>步骤一：关闭柜机门卡上锁槽</text>
+        </view>
+        <image src='../../images/07.png' class='picFour step_pic'></image>
+      </view>
+      <view class='step_wrap'>
+        <view class='step_top'>
+          <text class='step'>2</text>
+          <text class='step_title'>步骤二：进入程序，等待自动结束账单</text>
+        </view>
+        <image src='../../images/08.png' class='picFive step_pic'></image>
+      </view>
+    </view>
+    <!-- 余额提现 -->
+    <view class='contentItem' wx:else="{{tabName=='余额提现'}}">
+      <view class='step_wrap'>
+        <view class='step_top'>
+          <text class='step'>1</text>
+          <text class='step_title'>步骤一：归还陪护床后点击“个人中心”</text>
+        </view>
+        <image src='../../images/04.png' class='picSix step_pic'></image>
+      </view>
+      <view class='step_wrap'>
+        <view class='step_top'>
+          <text class='step'>2</text>
+          <text class='step_title'>步骤二：点击“我的钱包”</text>
+        </view>
+        <image src='../../images/05.png' class='picSeven step_pic'></image>
+      </view>
+      <view class='step_wrap'>
+        <view class='step_top'>
+          <text class='step'>3</text>
+          <text class='step_title'>步骤三：点击“我的钱包”页面下方“提现”按钮</text>
+        </view>
+        <image src='../../images/06.png' class='picEight step_pic'></image>
+      </view>
+    </view>
+  </view>
+
+</view>
