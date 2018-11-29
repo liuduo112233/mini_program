@@ -1,17 +1,11 @@
-// pages/recharge/recharge.js
+// pages/myOrders/myOrders.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    price:'50'
-  },
-  switchPrice: function (event) {
-    var value = event.currentTarget.dataset.value;
-    this.setData({
-      price: value
-    })
+    tabName: '使用陪护床'
   },
 
   /**
@@ -68,5 +62,13 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  switchTab: function (event) {
+    var value = event.currentTarget.dataset.value;
+    this.setData({
+      tabName: value
+    })
   }
+
+
 })

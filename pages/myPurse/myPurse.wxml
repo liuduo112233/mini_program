@@ -1,0 +1,13 @@
+<view class='myPurse_wrap'>
+  <view class='bg_color'>
+    <view class='bg_img' style="background-image:url('../../images/myPurse_bg.png')">
+      <text class='title'>当前余额</text>
+      <view class='money_wrap'>
+        <text>￥</text>
+        <text class='money'>12335</text>
+      </view>
+    </view>
+    <button class="recharge">微信充值</button>
+  </view>
+  <text class='withdrawCash'>提现</text>
+</view>

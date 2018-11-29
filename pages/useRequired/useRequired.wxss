@@ -1,0 +1,19 @@
+.tab text {
+  display: inline-block;
+  text-align: center;
+  font-size: 30rpx;
+  padding: 13rpx;
+}
+
+.tab {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  height: 85rpx;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+
+.tab text.active {
+  border-bottom: 3rpx solid #56a5ff;
+  color: #56a5ff;
+}

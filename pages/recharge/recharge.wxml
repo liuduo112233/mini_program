@@ -1,2 +1,31 @@
-<!--pages/recharge/recharge.wxml-->
-<text>pages/recharge/recharge.wxml</text>
+<view class='recharge_page'>
+  <view class='recharge_wrap'>
+    <view class='recharge_content'>
+      <text>充值金额</text>
+      <view class='price_wrap'>
+        <button class="{{price=='50'?'price_btn active':'price_btn'}}" data-value='50' bindtap="switchPrice">50元</button>
+        <button class="{{price=='100'?'price_btn active':'price_btn'}}" data-value='100' bindtap="switchPrice">100元</button>
+      </view>
+      <view class='pay_choice'>
+        <view class='choice_left'>
+          <icon class='wechat_icon' style="background-image:url('../../images/wechat.png')"></icon>
+          <text>微信支付</text>
+        </view>
+        <icon class='choice_checkedIcon' style="background-image:url('../../images/confirm.png')"></icon>
+      </view>
+    </view>
+  </view>
+  <view class='illustrate_wrap'>
+    <view class='illustrate_line'>
+      <text class='illustrate_title'>充值说明</text>
+    </view>
+    <view class='illustrate_content'>
+      支付金额已在微信支付平台进行监督，充值成功后可通过钱包里的提现功能对余额进行退款操作，退款将实时通过原路返还支付账号。
+    </view>
+  </view>
+  <view class='pay_wrap'>
+    <text class='pay_info'>点击立即支付，即表示同意 <text class='pay_detail'>《充值协议》</text></text>
+    <button class='pay_btn'>立即支付</button>
+  </view>
+
+</view>

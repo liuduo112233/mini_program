@@ -1,17 +1,11 @@
-// pages/recharge/recharge.js
+// pages/myPurse/myPurse.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    price:'50'
-  },
-  switchPrice: function (event) {
-    var value = event.currentTarget.dataset.value;
-    this.setData({
-      price: value
-    })
+
   },
 
   /**

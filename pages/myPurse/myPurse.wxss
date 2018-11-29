@@ -1,0 +1,55 @@
+.myPurse_wrap{
+  text-align: center;
+}
+.myPurse_wrap .bg_color {
+  background: #56a5ff;
+  width: 100%;
+  height: 292rpx;
+}
+
+.myPurse_wrap .bg_img {
+  width: 750rpx;
+  height: 490rpx;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.myPurse_wrap .title {
+  font-size: 30rpx;
+  margin-top: 168rpx;
+  text-align: center;
+  font-weight: 300;
+}
+
+.myPurse_wrap .money_wrap {
+  margin-top: 0rpx;
+  color: #333;
+  font-size: 30rpx;
+  font-weight: bold;
+  text-align: center;
+}
+
+.money_wrap .money {
+  font-size: 58rpx;
+}
+
+.myPurse_wrap .recharge {
+  width: 400rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  background: linear-gradient(18deg, rgba(87, 91, 221, 1) 0%, rgba(86, 163, 254, 1) 100%);
+  box-shadow: 0rpx 6rpx 16rpx 0rpx rgba(25, 113, 214, 0.28);
+  border-radius: 34rpx;
+  color: #fff;
+  font-size: 25rpx;
+  font-weight:300;
+}
+
+.myPurse_wrap .withdrawCash{
+  position: fixed;
+  bottom: 50rpx;
+  color: #56A5FF;
+  font-size: 30rpx;
+  font-weight:300;
+}

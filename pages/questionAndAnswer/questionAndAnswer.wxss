@@ -13,6 +13,13 @@
   margin: 0 49rpx;
 }
 
+.li.active {
+  border: none;
+}
+.li.active .arrow{
+  transform: rotate(0deg);
+}
+
 .li .title {
   color: #333;
   font-size: 30rpx;
@@ -39,6 +46,7 @@
   color: #fff;
   width: 400rpx;
   height: 68rpx;
+  line-height: 68rpx;
   background: linear-gradient(18deg, rgba(87, 91, 221, 1) 0%, rgba(86, 163, 254, 1) 100%);
   box-shadow: 0 6rpx 16rpx 0 rgba(25, 113, 214, 0.28);
   border-radius: 34rpx;
@@ -47,4 +55,3 @@
   left: 50%;
   transform: translate(-50%);
 }
-
