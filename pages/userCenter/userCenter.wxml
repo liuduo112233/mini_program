@@ -5,7 +5,7 @@
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
   </view>
   <view wx:for="{{infoList}}" wx:for-index="idx" wx:for-item="userItem">
-    <view class='item'>
+    <view class='item' data-url='{{userItem.url}}' bindtap="goPage">
       <view class='item-title'>{{userItem.name}}</view>
       <image class='item-icon' src="{{userItem.icon}}"></image>
     </view>

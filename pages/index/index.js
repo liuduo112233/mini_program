@@ -22,9 +22,18 @@ Page({
     size: 12,
     orientation: 'left',//滚动方向
     timeInterval: 40 // 时间间隔
-
   },
- 
+  goRequireRead:function(){
+    wx.navigateTo({
+      url: "../requiredRead/requiredRead"
+    })
+  },
+  goOrder:function(){
+    wx.navigateTo({
+      url: "../orders/orders"
+    })
+  },
+
   onLoad: function () {
    
   },

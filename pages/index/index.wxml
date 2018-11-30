@@ -16,17 +16,14 @@ circular=true
   </cover-view>
   <cover-view class='excuteArea'>
   <cover-view  class='line'></cover-view >
-  <cover-view  class='item'>
+  <cover-view  class='item' bindtap='goRequireRead'>
      <cover-image mode='widthFix' src='../../images/readme.png'></cover-image>
-     <cover-view class='text'>使用必读</cover-view>
+     <cover-view class='text' >使用必读</cover-view>
   </cover-view>
-  <cover-view  class='item'>
+  <cover-view  class='item' bindtap='goOrder'>
      <cover-image mode='widthFix' src='../../images/orderList.png'></cover-image>
      <cover-view  class='text'>当前订单</cover-view >
-
-  
   </cover-view >
-  
   </cover-view>
   <view class='excuteArea_fake'></view>
 

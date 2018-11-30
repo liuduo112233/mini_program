@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/withdrawCash/withdrawCash",
     "pages/paymentResult/paymentResult",
     "pages/requiredRead/requiredRead",
@@ -8,8 +9,7 @@
     "pages/questionAndAnswer/questionAndAnswer",
     "pages/myOrders/myOrders",
     "pages/orders/orders",
-    "pages/userCenter/userCenter",
-    "pages/index/index"
+    "pages/userCenter/userCenter"
   ],
   "window": {
     "backgroundTextStyle": "light",

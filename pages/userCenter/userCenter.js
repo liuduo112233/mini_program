@@ -8,11 +8,18 @@ Page({
     userInfo: {},
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     infoList:[
-      {name:'我的订单',icon:'../../images/order_icon.png'},
-      { name: '我的钱包', icon: '../../images/purse_icon.png' },
-      { name: '客服与帮助', icon: '../../images/service_icon.png' },
-      { name: '关于我们', icon: '../../images/aboutus_icon.png' },
+      { name: '我的订单', icon: '../../images/order_icon.png', url:'../myOrders/myOrders'},
+      { name: '我的钱包', icon: '../../images/purse_icon.png', url: '../myPurse/myPurse'},
+      { name: '客服与帮助', icon: '../../images/service_icon.png', url: '../questionAndAnswer/questionAndAnswer'},
+      { name: '关于我们', icon: '../../images/aboutus_icon.png',url: ''},
     ]
+  },
+  goPage: function (event){
+    var url = event.currentTarget.dataset.url;
+    wx.navigateTo({
+      url: url
+    })
+    
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
