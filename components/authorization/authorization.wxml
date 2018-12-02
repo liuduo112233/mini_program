@@ -1,0 +1,14 @@
+<view class='authority_wrap'>
+  <view class='authority_box'>
+      <view class='title'>
+        <text class='title_name'>微信授权</text>
+      </view>
+      <text class='content_info content'>智慧床边柜申请获得以下权限</text>
+      <text class='content_detail content'>获取你的公开信息(昵称、头像等)</text>
+      <view class='btn_wrap'>
+        <text class='btn denyBtn'>拒绝</text>
+        <text class='btn'>允许</text>
+      </view>
+  </view>
+  <mask></mask>
+</view>

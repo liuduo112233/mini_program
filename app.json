@@ -1,6 +1,8 @@
 {
   "pages": [
     "pages/index/index",
+    "components/authorization/authorization",
+    "components/mask/mask",
     "pages/withdrawCash/withdrawCash",
     "pages/paymentResult/paymentResult",
     "pages/requiredRead/requiredRead",
