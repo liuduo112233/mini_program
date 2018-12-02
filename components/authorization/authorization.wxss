@@ -1,0 +1,63 @@
+.authority_wrap {
+  width: 100vw;
+  height: 100vh;
+}
+
+.authority_box {
+  width: 583rpx;
+  height: 399rpx;
+  position: fixed;
+  left: 50%;
+  top: 365rpx;
+  z-index: 9999;
+  transform: translate(-50%);
+  background-color: #fff;
+  border-radius: 17px;
+}
+
+.authority_box .title {
+  padding: 46rpx 34rpx 0 34rpx;
+  text-align: center;
+}
+
+.authority_box .title .title_name {
+  display: block;
+  font-size: 36rpx;
+  font-weight: 400;
+  color: rgba(72, 72, 72, 1);
+  border-bottom: 1rpx solid #BFBFBF;
+  padding-bottom: 33rpx;
+}
+
+.authority_box .content {
+  text-align: center;
+  display: block;
+  color: #555;
+  font-weight: 300;
+}
+
+.authority_box .content_info {
+  font-size: 30rpx;
+  margin: 30rpx 0 20rpx 0;
+}
+
+.authority_box .content_detail {
+  font-size: 24rpx;
+}
+.authority_box .btn_wrap{
+  margin-top: 50rpx;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1rpx solid #BFBFBF;
+}
+.authority_box .btn{
+  width: 291rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 32rpx;
+  color:#56A5FF;
+  text-align: center;
+}
+.authority_box .denyBtn{
+  border-right: 1rpx solid #BFBFBF;
+}
