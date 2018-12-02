@@ -1,0 +1,39 @@
+.aboutUs_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutUs_wrap .logo {
+  width: 130rpx;
+  height: 130rpx;
+  margin-top: 180rpx;
+}
+
+.aboutUs_wrap .app_name {
+  color: #333;
+  font-size: 30rpx;
+  margin-top: 40rpx;
+  font-weight: 300;
+}
+
+.aboutUs_wrap .app_version {
+  color: #999;
+  font-size: 24rpx;
+  margin-top: 5rpx;
+}
+
+.aboutUs_wrap .protocol_info .protocol_item {
+  font-size: 22rpx;
+  color: #999;
+  padding: 0 5rpx;
+  line-height: 20rpx;
+  font-weight: 300;
+}
+.aboutUs_wrap .protocol_info{
+  position: fixed;
+  bottom: 50rpx;
+}
+.aboutUs_wrap .protocol_info .protocol_center{
+  color: #000;
+}

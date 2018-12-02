@@ -1,4 +1,4 @@
-// pages/myPurse/myPurse.js
+// pages/userProtocol/userProtocol.js
 Page({
 
   /**
@@ -7,16 +7,12 @@ Page({
   data: {
 
   },
-  withDrawCash(){
-    wx.navigateTo({
-      url: "../withdrawCash/withdrawCash"
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
   },
 
   /**

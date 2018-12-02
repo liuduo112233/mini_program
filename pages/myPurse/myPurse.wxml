@@ -9,5 +9,5 @@
     </view>
     <button class="recharge">微信充值</button>
   </view>
-  <text class='withdrawCash'>提现</text>
+  <text class='withdrawCash' bindtap='withDrawCash'>提现</text>
 </view>
