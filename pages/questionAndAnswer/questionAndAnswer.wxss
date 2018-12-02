@@ -20,8 +20,11 @@
 .li.active {
   border: none;
 }
+.li .arrow{
+  transition: all 0.5s;
+}
 .li.active .arrow{
-  transform: rotate(0deg);
+  transform: rotate(360deg);
 }
 
 .li .title {

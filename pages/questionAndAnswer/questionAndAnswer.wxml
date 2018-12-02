@@ -1,28 +1,28 @@
 <view class="help-wrap">
   <view data-index="0" bindtap='changeToggle' class="{{!selectedFlag[0]?'li':'li active'}}">
     <view class='title'>如何计费？</view>
-    <icon class='arrow' style="background-image:url('../../images/arrow_up.png')"></icon>
+    <icon class='arrow' style="background-image:url({{arrow}})"></icon>
   </view>
   <view hidden="{{!selectedFlag[0]}}" class='content'>
     如果遇到页面打开失败，或者一直在加载中，请先检查您的手机网络状况，如果手机网络较差，请切换手机优先2g/3g 或仅2g网络，然后重启
   </view>
   <view data-index="1" bindtap='changeToggle' class="{{!selectedFlag[1]?'li':'li active'}}">
     <view class='title'>余额规则？</view>
-    <icon class='arrow' style="background-image:url('../../images/arrow_up.png')"></icon>
+    <icon class='arrow' style="background-image:url({{arrow}})"></icon>
   </view>
   <view hidden="{{!selectedFlag[1]}}" class='content'>
     如果遇到页面打开失败，或者一直在加载中，请先检查您的手机网络状况，如果手机网络较差，请切换手机优先2g/3g 或仅2g网络，然后重启
   </view>
   <view data-index="2" bindtap='changeToggle' class="{{!selectedFlag[2]?'li':'li active'}}">
     <view class='title'>页面打开失败怎么办？</view>
-    <icon class='arrow' style="background-image:url('../../images/arrow_up.png')"></icon>
+    <icon class='arrow' style="background-image:url({{arrow}})"></icon>
   </view>
   <view hidden="{{!selectedFlag[2]}}" class='content'>
     如果遇到页面打开失败，或者一直在加载中，请先检查您的手机网络状况，如果手机网络较差，请切换手机优先2g/3g 或仅2g网络，然后重启
   </view>
   <view data-index="3" bindtap='changeToggle' class="{{!selectedFlag[3]?'li':'li active'}}">
     <view class='title'>设备故障导致上不了锁，会一直计费吗？</view>
-    <icon class='arrow' style="background-image:url('../../images/arrow_up.png')"></icon>
+    <icon class='arrow' style="background-image:url({{arrow}})"></icon>
   </view>
   <view hidden="{{!selectedFlag[3]}}" class='content'>
     如果遇到页面打开失败，或者一直在加载中，请先检查您的手机网络状况，如果手机网络较差，请切换手机优先2g/3g 或仅2g网络，然后重启

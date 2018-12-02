@@ -1,4 +1,4 @@
-// pages/myPurse/myPurse.js
+// pages/aboutUs/aboutUs.js
 Page({
 
   /**
@@ -7,16 +7,21 @@ Page({
   data: {
 
   },
-  withDrawCash(){
+  goUseProtocol:function(){
     wx.navigateTo({
-      url: "../withdrawCash/withdrawCash"
+      url: "../userProtocol/userProtocol"
+    })
+  },
+  goRechargeProtocol:function(){
+    wx.navigateTo({
+      url: "../rechargeProtocol/rechargeProtocol"
     })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
   },
 
   /**

@@ -55,6 +55,7 @@
 					"id": -1,
 					"name": "支付成功",
 					"pathName": "pages/paymentResult/paymentResult"
+
 				}
 			]
 		}
