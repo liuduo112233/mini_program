@@ -87,13 +87,18 @@ swiper, swiper-item, .slide-image {
   width: 117rpx;
 }
 
-.scan {
+.scan  ,.scan button{
   width: 256rpx;
   height: 256rpx;
   position: absolute;
   bottom: 8%;
   transform: translateX(-50%);
   left: 50%;
+}
+.scan button{
+  border: none;
+  padding: 0;
+  overflow: auto;
 }
 
 .scan image {

@@ -28,13 +28,35 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 2,
+			"list": [
+				{
+					"id": -1,
+					"name": "我的订单",
+					"pathName": "pages/myOrders/myOrders",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "交接班",
+					"pathName": "pages/orders/orders",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "支付成功",
+					"pathName": "pages/paymentResult/paymentResult"
+				}
+			]
 		}
 	}
 }

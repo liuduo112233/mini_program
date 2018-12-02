@@ -28,7 +28,9 @@ circular=true
   <view class='excuteArea_fake'></view>
 
   <view class='scan'>
+   <button  open-type='getUserInfo' bindgetuserinfo='hitBorrow' plain="true">
   <image mode='widthFix' src='../../images/scan.png'></image>
+   </button>
   </view>
 
 

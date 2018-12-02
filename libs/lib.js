@@ -9,7 +9,10 @@ var lib = {
     borrowBed: host + '/taskAdd',
     createPayment: host + '/chargeCreate',
     withdraw: host + '/cashPickup',
-    getRecord: host +"/getRecord"
+    getRecord: host +"/getRecord",
+    getChargeRecord: host + '/getChargeRecord',
+    getCharge: host + '/getCharge',
+    getChargeResult: host + '/getChargeResult'
   },
   init: function init(callback,e) {
     var accessToken = wx.getStorageSync('access_token');
@@ -191,7 +194,6 @@ var lib = {
     wx.scanCode({
       success: res => {
         var terminal = lib.getQueryString('qrcode', res.result);
-        var reqSource = lib.getQueryString('reqSource', res.result);
         if (!terminal) {
           wx.showModal({
             title: '扫错二维码了',
@@ -203,10 +205,7 @@ var lib = {
           });
           return;
         }
-        if (reqSource && app.globalData.reqSource == null) {
-          app.globalData.reqSource = reqSource;
-        }
-        callback(terminal,reqSource);
+        callback(terminal);
       }
     });
   },

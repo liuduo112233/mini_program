@@ -3,12 +3,12 @@
     <view class='top'>
       <image src='../../images/success_icon.png' class='icon'></image>
       <text class='payBack_status'>还床成功</text>
-      <text class='orderNum'>订单编号：7883939</text>
+      <text class='orderNum'>订单编号：{{data.id}}</text>
     </view>
     <view class='bottom'>
       <view class='item'>
         <view>
-          <text class='num'>20</text>
+          <text class='num'>{{data.turnBackMoney}}</text>
           <text class='unit'>元</text>
         </view>
         
@@ -16,14 +16,14 @@
       </view>
       <view class='item'>
         <view>
-        <text class='num'>10</text>
+        <text class='num'>{{data.rentTime}}</text>
         <text class='unit'>小时</text>
         </view>
         <text class='item_name'>使用时长</text>
       </view>
       <view class='item'>
       <view>
-      <text class='num'>100</text>
+      <text class='num'>{{data.rentMoney}}</text>
       <text class='unit'>元</text>
       </view>
         <text class='item_name'>支付金额</text>
@@ -31,4 +31,7 @@
 
     </view>
   </view>
+</view>
+<view class='backToIndex' bindtap='backToIndex'>
+完成
 </view>

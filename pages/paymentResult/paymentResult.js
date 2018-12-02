@@ -1,10 +1,21 @@
 // pages/paymentResult/paymentResult.js
+var lib = require('../../libs/lib.js');
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    data:{
+      rentMoney: "10.00",//string 产生租金，
+
+      turnBackMoney: 20,// 押金
+
+      rentTime: "10",// string 单位小时 
+
+      id: 12313
+    }
 
   },
 
@@ -12,8 +23,15 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    lib.http.post(lib.urls.getRecord, { id: options.id }, (res) => {
+      if (res.result == 1) {
+        this.setData({ data: res.data })
+
+      }
+    })
 
   },
+ 
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -62,5 +80,10 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  backToIndex() {
+    wx.navigateTo({
+      url: "../orders/orders"
+    })
+  },
 })

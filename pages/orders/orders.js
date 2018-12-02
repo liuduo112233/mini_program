@@ -1,14 +1,56 @@
 // pages/orders/orders.js
+var lib = require('../../libs/lib.js');
+
 const app = getApp()
 Page({
   data: {
-    orderLists:[
-      {statusVaue:'智慧床边柜使用中',usedTime:'12:32:33',location:'深圳市南山区2号床'},
-      { statusVaue: '智慧床边柜使用中', usedTime: '12:32:33', location: '深圳市南山区2号床' },
-      { statusVaue: '智慧床边柜使用中', usedTime: '12:32:33', location: '深圳市南山区2号床' },
-      { statusVaue: '智慧床边柜使用中', usedTime: '12:32:33', location: '深圳市南山区2号床' },
-      { statusVaue: '智慧床边柜使用中', usedTime: '12:32:33', location: '深圳市南山区2号床' }
-    ]
+    list: [{
+
+      returnTime: '2018-11-23 11:25:23',//string 归还时间
+
+      rentMoney: "10.00",//string 产生租金，
+
+      address: 'XX体育场', //string 租借地点
+
+      terminal: '000060000172',// string 设备编号
+
+      rentTime: "00:00:32",// string 租借时长 
+
+      status: 1,//int租借状态   1 租借中  2已归还 3未知
+
+      statusText: '租借中',// string 租借状态文字
+
+      id:12313
+
+    }],
+  },
+  getCharge(e){
+   console.log(e);
+   var id=e.target.dataset.id;
+    lib.http.post(lib.urls.getCharge, { id:id }, (res) => {
+      if (res.result == 1) {
+       //微信支付
+        res.data.success=()=>{
+          wx.redirectTo({
+            url: '../paymentResult/paymentResult?id='+id,
+          })
+
+        }
+        res.data.fail = () => {
+          setTimeout(() => {
+            wx.showToast({
+              icon: '充值失败',
+              title: res.msg,
+              duration: 5000
+            })
+          }, 0)
+        }
+        
+        wx.requestPayment(res.data);
+
+      }
+    })
+   
   },
 
   /**
@@ -29,6 +71,12 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    lib.http.post(lib.urls.getRecord, { isBorrow: 1 }, (res) => {
+      if (res.result == 1) {
+        this.setData({ list: res.list })
+
+      }
+    })
 
   },
 

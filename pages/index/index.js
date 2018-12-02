@@ -1,6 +1,7 @@
 //index.js
 //获取应用实例
-const app = getApp()
+const app = getApp();
+var lib=require('../../libs/lib.js');
 
 Page({
   data: {
@@ -35,6 +36,7 @@ Page({
   },
 
   onLoad: function () {
+   
     // 页面显示
     var vm = this;
     var length = vm.data.text.length * vm.data.size;//文字长度
@@ -80,5 +82,60 @@ Page({
         }
       }
     }, vm.data.timeInterval);
+  },
+
+  hitBorrow({detail}){
+    lib.init((user) => {
+      
+    },detail);
+    lib.scanCode((terminal) => {
+      lib.http.post(lib.urls.getDeviceInfo, { terminal: terminal }, (res) => {
+        if (res.result == 1) {
+          if (res.bed.canBorrow){
+            if (!res.bed.shortMoney){
+              lib.http.post(lib.urls.borrowBed, { terminal: terminal }, (res) => {
+                if (res.result == 1) {
+                  setTimeout(() => {
+                    wx.showToast({
+                      icon: 'none',
+                      title: res.msg,
+                      duration: 5000
+                    })
+                  }, 0)
+
+                }
+              })
+
+            }else{
+              setTimeout(() => {
+                wx.showToast({
+                  icon: 'none',
+                  title: res.msg,
+                  duration: 5000
+                })
+              }, 0)
+
+            }
+          }else{
+            setTimeout(() => {
+              wx.showToast({
+                icon: 'none',
+                title: res.msg,
+                duration: 5000
+              })
+            }, 0)
+
+          }
+         
+
+        }
+      })
+
+
+
+   
+       
+    })
+
   }
 })

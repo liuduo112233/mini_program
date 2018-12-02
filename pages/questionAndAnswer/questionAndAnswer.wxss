@@ -12,6 +12,10 @@
   box-sizing: border-box;
   margin: 0 49rpx;
 }
+.arrow{
+  transition: all 0.3s;
+
+}
 
 .li.active {
   border: none;

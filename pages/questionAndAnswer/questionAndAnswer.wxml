@@ -27,5 +27,5 @@
   <view hidden="{{!selectedFlag[3]}}" class='content'>
     如果遇到页面打开失败，或者一直在加载中，请先检查您的手机网络状况，如果手机网络较差，请切换手机优先2g/3g 或仅2g网络，然后重启
   </view>
-  <button class='btn'>联系客服</button>
+  <button class='btn' bindtap='call'>联系客服</button>
 </view>
