@@ -34,10 +34,11 @@
 }
 
 .price_btn {
+  text-align: center;
   width: 301rpx;
   height: 76rpx;
   line-height: 76rpx;
-  border: 1rpx solid #56a5ff;
+  border: 2rpx solid #56a5ff;
   border-radius: 38rpx;
   font-size: 36rpx;
   color: #56a5ff;

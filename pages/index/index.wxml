@@ -20,7 +20,7 @@ circular=true
      <cover-image mode='widthFix' src='../../images/readme.png'></cover-image>
      <cover-view class='text' >使用必读</cover-view>
   </cover-view>
-  <cover-view  class='item' bindtap='goOrder'>
+  <cover-view  class='item' bindtap='goOrder'> 
      <cover-image mode='widthFix' src='../../images/orderList.png'></cover-image>
      <cover-view  class='text'>当前订单</cover-view >
   </cover-view >
@@ -47,6 +47,8 @@ circular=true
     </view>
   </view>
 </view>  
+
+<authorization wx:if="{{tokenFlag}}" />
 
 
 

@@ -12,7 +12,8 @@ Page({
       { name: '我的钱包', icon: '../../images/purse_icon.png', url: '../myPurse/myPurse'},
       { name: '客服与帮助', icon: '../../images/service_icon.png', url: '../questionAndAnswer/questionAndAnswer'},
       { name: '关于我们', icon: '../../images/aboutus_icon.png',url: '../aboutUs/aboutUs'},
-    ]
+    ],
+    tokenFlag:false
   },
   goPage: function (event){
     var url = event.currentTarget.dataset.url;
@@ -44,6 +45,12 @@ Page({
           })
         }
       })
+    }
+  },
+  onShow: function(){
+    var accessToken = wx.getStorageSync('access_token');
+    if (!accessToken){
+      this.setData({ tokenFlag: true})
     }
   }
 })

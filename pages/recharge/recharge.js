@@ -1,4 +1,6 @@
 // pages/recharge/recharge.js
+var lib = require('../../libs/lib.js');
+
 Page({
 
   /**
@@ -19,6 +21,18 @@ Page({
    */
   onLoad: function (options) {
 
+  },
+  reCharge(){
+    lib.createPayment(this.data.price,{},()=>{
+      wx.showModal({
+        title: '充值成功',
+        content: res.msg,
+        showCancel: false
+      });
+      wx.navigateBack({
+        delta:-1
+      })
+    })
   },
 
   /**

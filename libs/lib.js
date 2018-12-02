@@ -1,5 +1,5 @@
 var  app = getApp(),
-  host ='https://aliyun-mobile-api.imlaidian.com/cdt';
+  host ="https://www.baidu.com";//接口主域名
 var lib = {
   urls: {
     host: host,
@@ -162,7 +162,6 @@ var lib = {
   },
   createPayment: function(amount, data, callback) {
     data.amount = amount;
-    data.channel = 'wx_lite';
     console.log(data);
     lib.http.post(lib.urls.createPayment, data, function(res) {
       if (res.result && res.result === -1) {
@@ -173,21 +172,21 @@ var lib = {
         });
         return;
       }
-      console.log('createPayment');
-      pingpp.createPayment(res, function(result, err) {
-        if (result === 'success') {
-          callback();
-        } else {
-          console.log(err);
-          if (err.extra.errMsg.indexOf('cancel')) return;
-          wx.showModal({
-            title: '充值失败',
-            content: JSON.stringify(err),
-            showCancel: false
-          });
-          return;
-        }
-      });
+      res.data.success = () => {
+        callback();
+
+      }
+      res.data.fail = () => {
+        setTimeout(() => {
+          wx.showToast({
+            icon: '充值失败',
+            title: res.msg,
+            duration: 5000
+          })
+        }, 0)
+      }
+      wx.requestPayment(res.data);
+     
     });
   },
   scanCode: callback => {

@@ -11,3 +11,4 @@
     </view>
   </view>
 </view>
+<authorization wx:if="{{tokenFlag}}"/>

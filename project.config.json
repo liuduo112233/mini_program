@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -54,8 +54,19 @@
 				{
 					"id": -1,
 					"name": "支付成功",
-					"pathName": "pages/paymentResult/paymentResult"
-
+					"pathName": "pages/paymentResult/paymentResult",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的钱包",
+					"pathName": "pages/myPurse/myPurse"
 				}
 			]
 		}

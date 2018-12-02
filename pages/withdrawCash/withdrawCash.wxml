@@ -13,5 +13,5 @@
       <text class='all_money'  bindtap="getAllMoney" data-money="{{money}}" >全部</text>
     </view>
   </view>
-  <button class='withdraw_btn'>立即转出</button>
+  <button class='withdraw_btn' bindtap='withDraw'>立即转出</button>
 </view>

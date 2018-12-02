@@ -1,10 +1,13 @@
 // pages/myPurse/myPurse.js
+var lib = require('../../libs/lib.js');
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    money:1231
 
   },
   withDrawCash(){
@@ -16,7 +19,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+  
     
+  },
+  recharge(){
+    wx.navigateTo({
+      url: "../recharge/recharge"
+    })
   },
 
   /**
@@ -30,6 +39,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    lib.init((user) => {
+      this.setData({ money: user.money })
+    });
 
   },
 

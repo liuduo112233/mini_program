@@ -3,8 +3,8 @@
     <view class='recharge_content'>
       <text>充值金额</text>
       <view class='price_wrap'>
-        <button class="{{price=='50'?'price_btn active':'price_btn'}}" data-value='50' bindtap="switchPrice">50元</button>
-        <button class="{{price=='100'?'price_btn active':'price_btn'}}" data-value='100' bindtap="switchPrice">100元</button>
+        <view plain='true' class="{{price=='50'?'price_btn active':'price_btn'}}" data-value='50' bindtap="switchPrice">50元</view>
+        <view  class="{{price=='100'?'price_btn active':'price_btn'}}" data-value='100' bindtap="switchPrice">100元</view>
       </view>
       <view class='pay_choice'>
         <view class='choice_left'>

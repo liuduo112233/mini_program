@@ -1,11 +1,13 @@
 // pages/withdrawCash/withdrawCash.js
+var lib = require('../../libs/lib.js');
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    money:8888,
+    money:1213,
     money_value:''
   },
   getAllMoney:function(e){
@@ -25,6 +27,27 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    lib.init((user) => {
+      this.setData({ money: user.money })
+    });
+
+  },
+  withDraw(){
+    lib.http.post(lib.urls.withdraw, { amount: money_value }, (res) => {
+      setTimeout(() => {
+        wx.showToast({
+          icon: 'none',
+          title: res.msg,
+          duration: 5000
+        })
+      }, 0)
+    if(res.result==1){
+     wx.redirectTo({
+       url: '../index/index',
+     })
+    }
+    
+    })
 
   },
 

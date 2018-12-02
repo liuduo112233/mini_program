@@ -22,14 +22,18 @@ Page({
     marquee_margin: 10,
     size: 12,
     orientation: 'left',//滚动方向
-    timeInterval: 40 // 时间间隔
+    timeInterval: 40, // 时间间隔
+    tokenFlag:false
   },
   goRequireRead:function(){
     wx.navigateTo({
       url: "../requiredRead/requiredRead"
     })
   },
-  goOrder:function(){
+  goOrder:function({detail}){
+    lib.init((user) => {
+
+    }, detail);
     wx.navigateTo({
       url: "../orders/orders"
     })
@@ -53,6 +57,10 @@ Page({
     this.setData({ currentDot: e.detail.current})
   },
   onShow: function () {
+      var accessToken = wx.getStorageSync('access_token');
+      if (!accessToken) {
+        this.setData({ tokenFlag: true })
+    }
   
   },
 
