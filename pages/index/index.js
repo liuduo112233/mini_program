@@ -35,12 +35,6 @@ Page({
   },
 
   onLoad: function () {
-   
-  },
-  swiperChange: function (e) {
-    this.setData({ currentDot: e.detail.current})
-  },
-  onShow: function () {
     // 页面显示
     var vm = this;
     var length = vm.data.text.length * vm.data.size;//文字长度
@@ -51,6 +45,13 @@ Page({
       marquee_margin: length < windowWidth ? windowWidth - length : vm.data.marquee_margin//当文字长度小于屏幕长度时，需要增加补白
     });
     vm.run2();// 第一个字消失后立即从右边出现
+   
+  },
+  swiperChange: function (e) {
+    this.setData({ currentDot: e.detail.current})
+  },
+  onShow: function () {
+  
   },
 
   run2: function () {
