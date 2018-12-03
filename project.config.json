@@ -12,7 +12,7 @@
 		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.4.0",
+	"libVersion": "2.3.2",
 	"appid": "wx2d14fec72064d438",
 	"projectname": "shareBed",
 	"debugOptions": {

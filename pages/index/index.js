@@ -23,7 +23,10 @@ Page({
     size: 12,
     orientation: 'left',//滚动方向
     timeInterval: 40, // 时间间隔
-    tokenFlag:false
+    tokenFlag:false,
+    tabHomeValue:'../../images/indexIconActive.png',
+    tabUserValue:'../../images/userCenter.png',
+    tabName:'首页'
   },
   goRequireRead:function(){
     wx.navigateTo({
@@ -38,7 +41,25 @@ Page({
       url: "../orders/orders"
     })
   },
-
+  switchTab:function(e){
+    var value = e.currentTarget.dataset.name;
+    if(value=='首页'){
+      this.setData({
+        tabHomeValue: '../../images/indexIconActive.png',
+        tabUserValue: '../../images/userCenter.png',
+        tabName:'首页'
+      })
+    }else if(value =='个人中心'){
+      this.setData({
+        tabHomeValue: '../../images/indexIcon.png',
+        tabUserValue: '../../images/userCenterActive.png',
+        tabName: '个人中心'
+      })
+      wx.navigateTo({
+        url: "../userCenter/userCenter"
+      })
+    }
+  },
   onLoad: function () {
    
     // 页面显示
