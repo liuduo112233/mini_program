@@ -12,16 +12,13 @@
   box-sizing: border-box;
   margin: 0 49rpx;
 }
-.arrow{
-  transition: all 0.3s;
 
-}
 
 .li.active {
   border: none;
 }
 .li .arrow{
-  transition: all 0.5s;
+  transition: all 0.25s;
 }
 .li.active .arrow{
   transform: rotate(360deg);

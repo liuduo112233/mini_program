@@ -18,8 +18,9 @@ Component({
     customMethod: function () { },
     allow({detail}){
       console.log(detail);
+      this.setData({ flag: false })
+
       lib.init((user) => {
-        this.setData({ flag: false })
 
       }, detail);
 

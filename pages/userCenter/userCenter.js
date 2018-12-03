@@ -52,5 +52,24 @@ Page({
     if (!accessToken){
       this.setData({ tokenFlag: true})
     }
-  }
+  },
+  switchTab: function (e) {
+    //   var value = e.currentTarget.dataset.name;
+    //   if(value=='首页'){
+    //     this.setData({
+    //       tabHomeValue: '../../images/indexIconActive.png',
+    //       tabUserValue: '../../images/userCenter.png',
+    //       tabName:'首页'
+    //     })
+    //   }else if(value =='个人中心'){
+    //     this.setData({
+    //       tabHomeValue: '../../images/indexIcon.png',
+    //       tabUserValue: '../../images/userCenterActive.png',
+    //       tabName: '个人中心'
+    //     })
+    wx.navigateTo({
+      url: "../index/index"
+    })
+    //   }
+  },
 })

@@ -12,19 +12,20 @@
 .authority_box {
   width: 583rpx;
   /* height: 399rpx; */
-  position: fixed;
+  position: absolute;
   left: 50%;
   top: 365rpx;
   z-index: 9999;
   transform: translate(-50%);
   background-color: #fff;
-  border-radius: 17px;
+  border-radius: 34rpx;
   overflow: hidden;
 }
 
 .authority_box .title {
   padding: 46rpx 34rpx 0 34rpx;
   text-align: center;
+  overflow: auto;
 }
 
 .authority_box .title .title_name {
@@ -32,8 +33,16 @@
   font-size: 36rpx;
   font-weight: 400;
   color: rgba(72, 72, 72, 1);
-  border-bottom: 1rpx solid #BFBFBF;
+
   padding-bottom: 33rpx;
+}
+.authority_box .title .line{
+ position: absolute;
+ top: 113rpx;
+ height: 1rpx;
+ left: 34rpx;
+ right: 34rpx;
+ z-index: 40;
 }
 
 .authority_box .content {
@@ -67,8 +76,9 @@
   text-align: center;
   background:#fff;
   border: none;
+  padding: 0;
 }
 .authority_box .denyBtn{
   border-right: 1rpx solid #BFBFBF;
-  border-radius: 0,0,0,17rpx;
+  /* border-radius: 0,0,0,17rpx; */
 }

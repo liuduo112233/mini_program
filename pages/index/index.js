@@ -42,23 +42,23 @@ Page({
     })
   },
   switchTab:function(e){
-    var value = e.currentTarget.dataset.name;
-    if(value=='首页'){
-      this.setData({
-        tabHomeValue: '../../images/indexIconActive.png',
-        tabUserValue: '../../images/userCenter.png',
-        tabName:'首页'
-      })
-    }else if(value =='个人中心'){
-      this.setData({
-        tabHomeValue: '../../images/indexIcon.png',
-        tabUserValue: '../../images/userCenterActive.png',
-        tabName: '个人中心'
-      })
+  //   var value = e.currentTarget.dataset.name;
+  //   if(value=='首页'){
+  //     this.setData({
+  //       tabHomeValue: '../../images/indexIconActive.png',
+  //       tabUserValue: '../../images/userCenter.png',
+  //       tabName:'首页'
+  //     })
+  //   }else if(value =='个人中心'){
+  //     this.setData({
+  //       tabHomeValue: '../../images/indexIcon.png',
+  //       tabUserValue: '../../images/userCenterActive.png',
+  //       tabName: '个人中心'
+  //     })
       wx.navigateTo({
         url: "../userCenter/userCenter"
       })
-    }
+  //   }
   },
   onLoad: function () {
    

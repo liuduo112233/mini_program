@@ -72,6 +72,9 @@ swiper, swiper-item, .slide-image {
 .excuteArea .item {
   overflow: auto;
 }
+.excuteArea .item button {
+  border: none;
+}
 
 .excuteArea .item .text {
   height: 29rpx;

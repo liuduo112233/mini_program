@@ -20,9 +20,13 @@ circular=true
      <cover-image mode='widthFix' src='../../images/readme.png'></cover-image>
      <cover-view class='text' >使用必读</cover-view>
   </cover-view>
-  <cover-view  class='item' bindtap='goOrder'> 
-     <cover-image mode='widthFix' src='../../images/orderList.png'></cover-image>
+  <cover-view  class='item'> 
+    
+   <button  open-type='getUserInfo' bindgetuserinfo='goOrder' plain="true">
+    <cover-image mode='widthFix' src='../../images/orderList.png'></cover-image>
      <cover-view  class='text'>当前订单</cover-view >
+   
+</button>
   </cover-view >
   </cover-view>
   <view class='excuteArea_fake'></view>
@@ -48,12 +52,12 @@ circular=true
   </view>
 </view>  
 <view class='bottom_tabWrap'>
-  <view data-name ='首页' bindtap='switchTab' class="{{tabName=='首页'?'tab_item active':'tab_item'}}" >
-    <image src='{{tabHomeValue}}' class='tab_img home_img'></image>
+  <view data-name ='首页' class="{{tabName=='首页'?'tab_item active':'tab_item'}}" >
+    <image src='../../images/indexIconActive.png' class='tab_img home_img'></image>
     <text class='title'>首页</text>
   </view>
   <view data-name ='个人中心' bindtap='switchTab' class="{{tabName=='个人中心'?'tab_item active':'tab_item'}}">
-    <image class='tab_img user_img' src='{{tabUserValue}}'></image>
+    <image class='tab_img user_img' src= '../../images/userCenter.png'></image>
     <text class='title'>个人中心</text>
   </view>
 </view>

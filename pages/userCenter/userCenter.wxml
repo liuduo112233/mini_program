@@ -11,4 +11,15 @@
     </view>
   </view>
 </view>
+<view class='bottom_tabWrap'>
+  <view data-name ='首页'  bindtap='switchTab' class="{{tabName=='首页'?'tab_item active':'tab_item'}}" >
+    <image src='../../images/indexIcon.png' class='tab_img home_img'></image>
+    <text class='title'>首页</text>
+  </view>
+  <view data-name ='个人中心' class="{{tabName=='个人中心'?'tab_item active':'tab_item'}}">
+    <image class='tab_img user_img' src= '../../images/userCenterActive.png'></image>
+    <text class='title'>个人中心</text>
+  </view>
+</view>
+
 <authorization wx:if="{{tokenFlag}}"/>
