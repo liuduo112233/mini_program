@@ -1,1 +1,17 @@
-/* pages/rechargeProtocol/rechargeProtocol.wxss */
+.rechargeProtocol{
+  padding: 30rpx 20rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+.rechargeProtocol .title{
+  display: block;
+  margin-bottom: 5rpx;
+}
+
+.rechargeProtocol .content{
+  line-height: 42rpx;
+  margin-bottom: 10rpx;
+}
+.rechargeProtocol .item{
+  margin-bottom: 35rpx;
+}

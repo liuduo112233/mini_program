@@ -1,2 +1,31 @@
-<!--pages/userProtocol/userProtocol.wxml-->
-<text>用户协议</text>
+<view class='userProtocol'>
+  <view class='item'>
+    <view class='title'>特别提示</view>
+    <view class='content'>在此特别提醒（用户）在注册成为“共享陪护床官方版”用户之前，请认真阅读本《用户协议》及相关附属协议（以下简称“本协议”）。</view>
+    <view class='content'>
+      本协议以及相关使用说明、使用协议、充值协议、许可条款等本服务的附属协议，共同构成了支持本服务的完整协议。请确保您充分理解本协议中各条款。除非您接收本协议所有条款，否则您无权注册、登录或使用本协议所涉服务。</view>
+    <view class='content'>
+      本协议以及相关使用说明、使用协议、充值协议、许可条款等本服务的附属协议，共同构成了支持本服务的完整协议。请确保您充分理解本协议中各条款。除非您接收本协议所有条款，否则您无权注册、登录或使用本协议所涉服务。</view>
+  </view>
+  <view class='item'>
+    <view class='title'>账号注册</view>
+    <view class='content'>在此特别提醒（用户）在注册成为“共享陪护床官方版”用户之前，请认真阅读本《用户协议》及相关附属协议（以下简称“本协议”）。</view>
+    <view class='content'>
+      本协议以及相关使用说明、使用协议、充值协议、许可条款等本服务的附属协议，共同构成了支持本服务的完整协议。请确保您充分理解本协议中各条款。除非您接收本协议所有条款，否则您无权注册、登录或使用本协议所涉服务。11111</view>
+    <view class='content'>
+      本协议以及相关使用说明、使用协议、充值协议、许可条款等本服务的附属协议，共同构成了支持本服务的完整协议。请确保您充分理解本协议中各条款。除非您接收本协议所有条款，否则您无权注册、登录或使用本协议所涉服务。</view>
+    <view class='content'>dfadfasdfetre</view>
+    <view class='content'>fjdfjalfjkljjbh</view>
+    <view class='content'>dfadfasdfetre</view>
+    <view class='content'>fjdfjalfjkljjbh</view>
+  </view>
+  <view class='item'>
+    <view class='title'>服务费用基本规则</view>
+    <view class='content'>jgjkdgjfdkgjf</view>
+    <view class='content'>jgjkdgjfdkgjf</view>
+  </view>
+  <view class='item'>
+    <view class='title'>用户保证</view>
+    <view class='content'>jgjkdgjfdkgjf</view>
+  </view>
+</view>

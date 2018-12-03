@@ -1,2 +1,27 @@
-<!--pages/rechargeProtocol/rechargeProtocol.wxml-->
-<text>充值协议</text>
+<view class='rechargeProtocol'>
+  <view>
+    尊敬的用户，为保障您的合法权益，请您在充值前仔细阅读《充值协议》（“本协议”）以了解“共享陪护床官方版”的充值及余额使用规则并避免产生任何误解。当您点击“立即支付”按钮，即视为您已阅读、丽姐本协议，并同意按照本协议约定的规则进行充值或使用账户余额。
+  </view>
+  <view class='item'>
+    <view class='title'>1、定义</view>
+    <view class='content'>账户余额：您通过“共享陪护床官方版”软件向您1️已注册的用户账号实际支付的金额。</view>
+  </view>
+  <view class='item'>
+    <view class='title'>2、账户余额有效期</view>
+    <view class='content'>1）账户余额：您通过“共享陪护床官方版”软件向您1️已注册的用户账号实际支付的金额。</view>
+  </view>
+   <view class='item'>
+    <view class='title'>3、账户余额的使用规则</view>
+    <view class='content'>1）账户余额：您通过“共享陪护床官方版”软件向您1️已注册的用户账号实际支付的金额。</view>
+    <view class='content'>2）账户余额：您通过“共享陪护床官方版”软件向您1️已注册的用户账号实际支付的金额。</view>
+  </view>
+   <view class='item'>
+    <view class='title'>4、保证与承诺</view>
+    <view class='content'>1）账户余额：您通过“共享陪护床官方版”软件向您1️已注册的用户账号实际支付的金额。</view>
+  </view>
+  <view class='item'>
+    <view class='title'>5、特别说明</view>
+    <view class='content'>经典款反间谍法账户余额：您通过“共享陪护床官方版”软件向您1️已注册的用户账号实际支付的金额。</view>
+    <view class='content'>房间打开手机付款账户余额：您通过“共享陪护床官方版”软件向您1️已注册的用户账号实际支付的金额。</view>
+  </view>
+</view>

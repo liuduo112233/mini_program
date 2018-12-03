@@ -4,7 +4,7 @@
       <text>充值金额</text>
       <view class='price_wrap'>
         <view plain='true' class="{{price=='50'?'price_btn active':'price_btn'}}" data-value='50' bindtap="switchPrice">50元</view>
-        <view  class="{{price=='100'?'price_btn active':'price_btn'}}" data-value='100' bindtap="switchPrice">100元</view>
+        <view class="{{price=='100'?'price_btn active':'price_btn'}}" data-value='100' bindtap="switchPrice">100元</view>
       </view>
       <view class='pay_choice'>
         <view class='choice_left'>
@@ -23,8 +23,9 @@
       支付金额已在微信支付平台进行监督，充值成功后可通过钱包里的提现功能对余额进行退款操作，退款将实时通过原路返还支付账号。
     </view>
   </view>
-  <view class='pay_wrap'>
-    <text class='pay_info'>点击立即支付，即表示同意 <text class='pay_detail'>《充值协议》</text></text>
+  <view class='pay_wrap' >
+    <view class='pay_info'>点击立即支付，即表示同意 <view bindtap='goProtocol' class='pay_detail' >《充值协议》</view>
+    </view>
     <button class='pay_btn'>立即支付</button>
   </view>
 
