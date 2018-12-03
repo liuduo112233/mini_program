@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/withdrawCash/withdrawCash",
     "pages/recharge/recharge",
     "pages/userProtocol/userProtocol",
     "pages/rechargeProtocol/rechargeProtocol",
@@ -7,7 +8,6 @@
     "pages/myPurse/myPurse",
     "pages/aboutUs/aboutUs",
     "components/authorization/authorization",
-    "pages/withdrawCash/withdrawCash",
     "pages/paymentResult/paymentResult",
     "pages/requiredRead/requiredRead",
     "pages/questionAndAnswer/questionAndAnswer",
