@@ -1,7 +1,7 @@
 <view class='withdraw_wrap'>
   <view class='content'>
     <view class='title'>
-      <icon class='icon' style="background-image:url('../../images/wechat.png')"></icon>
+      <icon class='icon' style="background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAAA8CAMAAADovOwsAAAAnFBMVEUAAAAAvAAJuwcAvAAJuwcJvAcAtgAJuwcJuwcGvAYJuwcJvAcIuwYIuwYJuwcMvQwJuwcJuwcJuwYJuwcIuwgIvAcIuggLvAsIuwcIuwcJuwcKuwYOuAAJuwcKuwYIuwcJuwcJuwcIuwgJvAcIuwcJuwcJuwgJvAYJuwYKvAUJuwYJuggJvAYIuwgLuwYIuwYIvQYJuwcJuwgJuwfH3RK3AAAAM3RSTlMAC/cD+d4H5+Mn2dB9eGoT8u3Dr19FIBe0lnRNEeufm5JvQDjUuoRVUTHJp6NjLFoqjaktzByAAAACLElEQVRYw6XX23aqMBAG4B8QBAQEFFBRkVLPh7Z73v/ddl1YWSHBAH6XXmQlf2YmiEbj1M22tukTqSs7XDtpjG6Uw1onjnn5WqIlLZqo1GAwO2htNpHr9NLQlW3HyIck5bsKXviwqRXz0HySNbX2bwyhm00dmAUE9ip1MpiCk1NnLmoWRG+vcqVePOZqB9SDmlmojE3qbuiwtzyjzkZTA4wDdTWLUEqyw6NQ9Y5RzP+iMBY+6eWOFn2jSO3nDWlmvyi+t+VPunYv9w5RfODPcvOsins+ky5RPGheQE8XQFHZ5pz78qqIPpkZpSElxhfiUFIVcX3vBXbEmAOaM+CiqCg7rkUW9UjUBEChs1FUtKlgBl9gE2tXDUq+QYoTCYQIiBUo5ZwL+AaJzySkgzth/iiEqfvBjnFHJbEA/ATWILI3iSSLsLfMO4bUTMeKLwrUJdnrhsKIOBEYhutLWgqCxLfMGql03OyE0+QIMA0vsUdBvDPT8FIJNEEdD+Kq4eVOADbEm7MNL38Hj8LHWrNaD6sEv0J6y7p8Q+kdg8ek2NIbNihZKvW2WlYfJ72leJr1P0xlaVMvITv5htTD5xiM26rHGglqLJM6Oo3BSU7UyUWBgDGn9tQrGkzaX8s3mnhty/SKZhm1Ebz+u6OT3Mh7uQTi6pPGJyH7p4DElUqTG3DLJ3ptgbVnQe5c1mH0fMKPqefsNj/OwossA+3cK9/PNUhII8kSvEcZhUf08h/Wzhf7aZO0zAAAAABJRU5ErkJggg==')"></icon>
       <text>提现到微信</text>
     </view>
 

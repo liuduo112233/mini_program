@@ -4,14 +4,14 @@
       <text>充值金额</text>
       <view class='price_wrap'>
         <view plain='true' class="{{price=='50'?'price_btn active':'price_btn'}}" data-value='50' bindtap="switchPrice">50元</view>
-        <view  class="{{price=='100'?'price_btn active':'price_btn'}}" data-value='100' bindtap="switchPrice">100元</view>
+        <view class="{{price=='100'?'price_btn active':'price_btn'}}" data-value='100' bindtap="switchPrice">100元</view>
       </view>
       <view class='pay_choice'>
         <view class='choice_left'>
-          <icon class='wechat_icon' style="background-image:url('../../images/wechat.png')"></icon>
+          <icon class='wechat_icon' style="background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAAA8CAMAAADovOwsAAAAnFBMVEUAAAAAvAAJuwcAvAAJuwcJvAcAtgAJuwcJuwcGvAYJuwcJvAcIuwYIuwYJuwcMvQwJuwcJuwcJuwYJuwcIuwgIvAcIuggLvAsIuwcIuwcJuwcKuwYOuAAJuwcKuwYIuwcJuwcJuwcIuwgJvAcIuwcJuwcJuwgJvAYJuwYKvAUJuwYJuggJvAYIuwgLuwYIuwYIvQYJuwcJuwgJuwfH3RK3AAAAM3RSTlMAC/cD+d4H5+Mn2dB9eGoT8u3Dr19FIBe0lnRNEeufm5JvQDjUuoRVUTHJp6NjLFoqjaktzByAAAACLElEQVRYw6XX23aqMBAG4B8QBAQEFFBRkVLPh7Z73v/ddl1YWSHBAH6XXmQlf2YmiEbj1M22tukTqSs7XDtpjG6Uw1onjnn5WqIlLZqo1GAwO2htNpHr9NLQlW3HyIck5bsKXviwqRXz0HySNbX2bwyhm00dmAUE9ip1MpiCk1NnLmoWRG+vcqVePOZqB9SDmlmojE3qbuiwtzyjzkZTA4wDdTWLUEqyw6NQ9Y5RzP+iMBY+6eWOFn2jSO3nDWlmvyi+t+VPunYv9w5RfODPcvOsins+ky5RPGheQE8XQFHZ5pz78qqIPpkZpSElxhfiUFIVcX3vBXbEmAOaM+CiqCg7rkUW9UjUBEChs1FUtKlgBl9gE2tXDUq+QYoTCYQIiBUo5ZwL+AaJzySkgzth/iiEqfvBjnFHJbEA/ATWILI3iSSLsLfMO4bUTMeKLwrUJdnrhsKIOBEYhutLWgqCxLfMGql03OyE0+QIMA0vsUdBvDPT8FIJNEEdD+Kq4eVOADbEm7MNL38Hj8LHWrNaD6sEv0J6y7p8Q+kdg8ek2NIbNihZKvW2WlYfJ72leJr1P0xlaVMvITv5htTD5xiM26rHGglqLJM6Oo3BSU7UyUWBgDGn9tQrGkzaX8s3mnhty/SKZhm1Ebz+u6OT3Mh7uQTi6pPGJyH7p4DElUqTG3DLJ3ptgbVnQe5c1mH0fMKPqefsNj/OwossA+3cK9/PNUhII8kSvEcZhUf08h/Wzhf7aZO0zAAAAABJRU5ErkJggg==')"></icon>
           <text>微信支付</text>
         </view>
-        <icon class='choice_checkedIcon' style="background-image:url('../../images/confirm.png')"></icon>
+        <icon class='choice_checkedIcon' style="background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABECAMAAAAPzWOAAAAAjVBMVEUAAABWpf9PnP9Wpf9Wpf9Wpf9Wpf9SpP9Wpf9Vpv9Wpf9Vpf9Upv9Wpf9Wpf9Wpf9Wpf9Wpf9Vpf9Wpf9Wpf9VpP9Vqv9Yp/9WpP9Wpf9Wpf9Vpf9Wpf9Wpf9Wpf9Wpf9Xpf9Wpv9Wpf9Wpf9Wpf9Wo/9Wpf9Wpf9Wpf9Wpf9XpP9Vqv9Wpv9YpP9Wpf+KPFFxAAAALnRSTlMAvgqI/dtbHPR8MLMo9/Ds6eDRpZ4hBgSYklHKxKuCdjjljWFVLLZwS0g/FmlD2zWwKwAAAehJREFUWMOl1umOqjAAhuFPBQRkB8F9d9SZc777v7xJTCZ1Oha6PL/Jm7a0aaGWBLvtuszTtCjX9S6Yw1R7qY+UlM2qhb5Dk/GtfBFDz+eIPT4OGJaIhCoztDrjicdBadSiR+xTS5VAKUipKVxBYUIDe7zTLWhkgjdEw7Ii5uI0ozMtSKsbp7QQJngx9mmlaiGcaCkSjatHS6k4Rxtam/00HnRwEANxHsonncTPSE0jTRLP+GL53COh8YlpCwp5B+Bs3ABG8ubfmjfGGV80AHLzxoivfCB2bZBz/HNu8IKTc4MRZs4N1vCdG1yjcG7Qh7Rfy2hXGDZ4BH/Jv4Cpb9ZgBnmNICqaDWbSdEYQFd0Gj/LCnkVFt0Ff/sVeICqaDa4xo6Ki3WCNE1UV3QYjnKmsaDZ4wZXqil6DUyBXV25aDR9ATWVFq8EFgICKimaDd+nKkCpajaIDgIaqirohX144UFHRanhXPKm+/FiU+m+L/473uRiKpS1+JB4thVPFS9j2PdxWtLLu8OIa0kI2xy8BzXl3SCIau+GPJQ3tALeKaLjMyLtB4RJSU/aAUlJRy2aOHm2UclC479BvPuOA7RTDDn0ZbxtDT7wsFPf/KYG+7r7wKamWjw6mpquo2VRllpfVptmvvqD0DZrcUf9VRXbSAAAAAElFTkSuQmCC')"></icon>
       </view>
     </view>
   </view>
@@ -23,8 +23,9 @@
       支付金额已在微信支付平台进行监督，充值成功后可通过钱包里的提现功能对余额进行退款操作，退款将实时通过原路返还支付账号。
     </view>
   </view>
-  <view class='pay_wrap'>
-    <text class='pay_info'>点击立即支付，即表示同意 <text class='pay_detail'>《充值协议》</text></text>
+  <view class='pay_wrap' >
+    <view class='pay_info'>点击立即支付，即表示同意 <view bindtap='goProtocol' class='pay_detail' >《充值协议》</view>
+    </view>
     <button class='pay_btn'>立即支付</button>
   </view>
 

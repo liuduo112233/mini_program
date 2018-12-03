@@ -1,1 +1,18 @@
-/* pages/userProtocol/userProtocol.wxss */
+.userProtocol{
+  padding: 30rpx 20rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+.userProtocol .title{
+  display: block;
+  margin-bottom: 5rpx;
+}
+
+.userProtocol .content{
+  line-height: 42rpx;
+  /* text-indent: 44rpx; */
+  margin-bottom: 10rpx;
+}
+.userProtocol .item{
+  margin-bottom: 35rpx;
+}

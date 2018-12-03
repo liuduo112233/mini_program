@@ -102,17 +102,20 @@
   width: 100%;
 }
 
-.pay_wrap text {
+.pay_wrap view {
   font-size: 24rpx;
 }
 
 .pay_wrap .pay_info {
   color: #999;
+  display: inline;
 }
 
 .pay_wrap .pay_detail {
   color: #56a5ff;
   border-bottom: 1px solid #56a5ff;
+  display: inline;
+  
 }
 
 .pay_btn {
